@@ -18,10 +18,10 @@
 <body>
     <header class="header" id="header">
         <div class="header-inner">
-            <a href="#" class="logo">
+            <div class="logo">
                 <img src="rogo.jpg" alt="妹尾和俊一級建築士事務所"
                     onerror="this.src='https://placehold.co/200x50/1e293b/FFFFFF?text=Logo'">
-            </a>
+            </div>
             <a href="#apply" class="btn btn-sm btn-header">お申し込みはこちら</a>
         </div>
     </header>
@@ -77,16 +77,18 @@
         <!-- サービス紹介 -->
         <section class="service section dark-bg fade-in">
             <div class="container">
-                <div class="service-box">
+                <div class="service-box premium-box">
                     <span class="video-course-badge">オンライン動画教材</span>
-                    <h2 class="service-title">「選ばれるホームインスペクション」<br>起業・副業バイブル</h2>
-                    <p class="service-desc">～後発・無名から月収100万を達成した再現性の高い戦略～</p>
-                    <div class="service-feature">
-                        <div class="feature-badge">ボリューム動画</div>
-                        <p>スライド66枚・80分超収録</p>
+                    <h2 class="service-title"><span>「選ばれるホームインスペクション」</span><br>起業・副業バイブル</h2>
+                    <p class="service-desc highlight-text-dark">～後発・無名から月収100万を達成した再現性の高い戦略～</p>
+                    <div class="service-feature-wrap">
+                        <div class="service-feature">
+                            <div class="feature-badge">超特大ボリューム</div>
+                            <p>スライド66枚・80分超収録</p>
+                        </div>
                     </div>
-                    <div style="margin-top: 2rem;">
-                        <a href="#sample-video" class="btn btn-lg btn-glow">無料サンプル動画で内容をチェックする</a>
+                    <div style="margin-top: 2.5rem;">
+                        <a href="#sample-video" class="btn btn-xl btn-glow pulse-animation">無料サンプル動画で内容をチェックする</a>
                     </div>
                 </div>
             </div>
@@ -118,8 +120,10 @@
                         <p class="course-sub">～見落とし・損害賠償リスクを最小化する実務の極意～</p>
                     </div>
                 </div>
-                <div class="warning-box">
-                    <p><strong>※ご注意</strong><br>この動画でホームインスペクションの「技術」は学べません。「技術があること」と「ビジネスで勝てること」はまったく別物です。</p>
+                <div class="important-warning">
+                    <h3>⚠️ 重要：本教材を買わないでいい人</h3>
+                    <p>この動画でホームインスペクションの<strong>「技術」は学べません。</strong></p>
+                    <p>「技術があること」と「ビジネスで勝てること」はまったく別物です。<br>どうビジネスにするかを知りたい方のみお申込みください。</p>
                 </div>
 
                 <div id="sample-video" class="sample-video-wrap">
@@ -302,6 +306,20 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span class="q-icon">Q</span>
+                            <p>既にベテランの方が多く、今さら参入しても稼げないのでは？</p>
+                            <span class="toggle-icon">＋</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="a-wrapper">
+                                <span class="a-icon">A</span>
+                                <p>むしろチャンスです。多くのベテランは『技術』はあっても『今の時代の集客戦略』にアップデートできていません。後発参入の私がいきなりトップ層に入れたのがその証拠です。</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -375,6 +393,11 @@
             <p class="copyright">&copy; 2026 妹尾和俊一級建築士事務所 All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- 上に戻るボタン -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="ページトップへ戻る">
+        <span></span>
+    </button>
 
     <script src="script.js"></script>
 </body>

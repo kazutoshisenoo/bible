@@ -408,6 +408,16 @@ img {
     padding: 2rem 0;
 }
 
+.premium-box {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    padding: 3.5rem 2rem;
+    box-shadow: 0 0 30px rgba(217, 119, 6, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
 .video-course-badge {
     display: inline-block;
     background: var(--gold);
@@ -421,9 +431,16 @@ img {
 }
 
 .service-title {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+}
+
+.service-title span {
     color: var(--gold);
+    font-size: 1.1em;
 }
 
 .service-desc {
@@ -431,30 +448,73 @@ img {
     margin-bottom: 2rem;
 }
 
+.highlight-text-dark {
+    display: inline-block;
+    background: rgba(217, 119, 6, 0.2);
+    border-bottom: 2px solid var(--gold);
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: var(--white);
+    border-radius: 4px 4px 0 0;
+}
+
+.service-feature-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
 .service-feature {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 1.5rem 3rem;
-    border-radius: var(--radius);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, rgba(217, 119, 6, 0.1), rgba(217, 119, 6, 0.3));
+    padding: 1.5rem 4rem;
+    border-radius: 50px;
+    border: 1px solid rgba(217, 119, 6, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .feature-badge {
-    background: var(--accent);
-    color: var(--white);
-    padding: 0.25rem 1rem;
+    background: var(--gold);
+    color: var(--primary);
+    padding: 0.3rem 1.5rem;
     border-radius: 50px;
-    font-size: 0.875rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 900;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
 }
 
 .service-feature p {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--white);
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(234, 88, 12, 0.4);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 4px 25px rgba(234, 88, 12, 0.7);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(234, 88, 12, 0.4);
+    }
 }
 
 /* Course Content */
@@ -498,13 +558,34 @@ img {
     font-weight: 500;
 }
 
-.warning-box {
-    background: #fff3cd;
-    color: #856404;
-    padding: 1.5rem;
+.important-warning {
+    background: #fff5f5;
+    border: 2px solid #ef4444;
     border-radius: var(--radius);
+    padding: 2.5rem 2rem;
     margin-bottom: 4rem;
-    border: 1px solid #ffeeba;
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.2);
+}
+
+.important-warning h3 {
+    color: #b91c1c;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.important-warning p {
+    color: #7f1d1d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.important-warning p:last-child {
+    margin-bottom: 0;
 }
 
 .sample-video-wrap {
