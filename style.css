@@ -249,8 +249,9 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
     background-color: #1e293b;
     /* Fallback color */
     background-image: url('to.jpg');
@@ -1165,6 +1166,13 @@ img {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    .header-inner {
+        padding: 0 1.5rem;
+    }
+    .service-title {
+        word-break: keep-all;
+        overflow-wrap: break-word; /* 長い単語の不自然な改行を防止 */
+    }
     .section {
         padding: 3rem 0; /* 余白を詰める */
     }
