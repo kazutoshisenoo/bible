@@ -253,12 +253,12 @@ img {
     height: 100%;
     background-color: #1e293b;
     /* Fallback color */
-    background-image: url('top.jpg');
+    background-image: url('to.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center 20%;
     background-repeat: no-repeat;
     z-index: -2;
-    transform: scale(1.05);
+    transform: scale(1.0);
     /* slightly scaled for animation could be added */
 }
 
@@ -593,6 +593,49 @@ img {
     background: var(--bg-gray);
     padding: 3rem 2rem;
     border-radius: 12px;
+}
+
+.premium-video-wrap {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 30px rgba(234, 88, 12, 0.2);
+    margin: 3rem 0;
+    padding: 4rem 2rem;
+}
+
+.video-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(234, 88, 12, 0.4);
+}
+
+.video-title-large {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    color: var(--white);
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+.video-title-large span {
+    color: var(--gold);
+}
+
+.premium-video-wrap .video-placeholder {
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premium-video-wrap .video-placeholder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(234, 88, 12, 0.3);
 }
 
 .video-title {
@@ -1128,6 +1171,14 @@ img {
 
     .hero-main-copy {
         font-size: 1.75rem;
+    }
+
+    .hero {
+        min-height: 100svh; /* スマホのアドレスバー考慮 */
+    }
+
+    .hero-bg {
+        background-position: center 10%; /* スマホでの見切れをさらに防止（頭頂部に合わせる） */
     }
 
     .profile-box {

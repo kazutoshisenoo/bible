@@ -13,6 +13,15 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=2">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FC6ZDMVD6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-0FC6ZDMVD6');
+    </script>
 </head>
 
 <body>
@@ -126,13 +135,13 @@
                     <p>「技術があること」と「ビジネスで勝てること」はまったく別物です。<br>どうビジネスにするかを知りたい方のみお申込みください。</p>
                 </div>
 
-                <div id="sample-video" class="sample-video-wrap">
-                    <h3 class="video-title">無料サンプル動画で内容をチェックする</h3>
-                    <div class="video-placeholder">
-                        <div class="play-btn"></div>
-                        <p>（ここに後から動画を挿入します）</p>
-                        <!-- <iframe src="..." frameborder="0" allowfullscreen></iframe> -->
-                    </div>
+                <div id="sample-video" class="sample-video-wrap premium-video-wrap">
+                    <div class="video-badge pulse-animation">＼ まずは無料でご視聴ください！ ／</div>
+                    <h3 class="video-title-large">スペシャルサンプル動画で<br><span class="highlight">内容を一部公開中！</span></h3>
+                    <a href="https://youtu.be/Tr0q6k3mHAI" target="_blank" rel="noopener noreferrer" class="video-placeholder" style="display: flex; cursor: pointer; padding: 0; text-decoration: none;">
+                        <img src="ホームインスペクション起業・副業バイブル.jpg" alt="サンプル動画" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+                        <div class="play-btn" style="position: relative; z-index: 2; margin: 0;"></div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -208,7 +217,7 @@
             <div class="container">
                 <h2 class="section-title">料金について</h2>
                 <div class="price-box new-price-box">
-                    <p class="price-amount">49,800<span class="unit">円（税込）</span></p>
+                    <p class="price-amount">78,000<span class="unit">円（税込）</span></p>
                     <p class="price-note">※ホームインスペクション1回で、この投資額は回収できます。</p>
                     <p class="price-catch">一生使えるスキルを、案件1回分の報酬で手に入れませんか？</p>
                     <div style="margin-top: 2rem;">
@@ -221,9 +230,11 @@
                         <h3 class="present-title">🎁 今なら無料プレゼント</h3>
                         <p class="present-desc">
                             こちらの公式LINEに登録された方に、実際に私が使っている<br><strong>道具・機材リストを無料プレゼント（Amazonリンク付き）</strong></p>
+                        <p class="present-note" style="color: var(--accent); font-weight: bold; font-size: 1.1rem; margin-bottom: 2rem; border-top: 1px dashed var(--accent); padding-top: 1rem; margin-top: -0.5rem;">
+                            ※ ご登録後、メッセージで<span style="font-size: 1.3rem; background-color: #ffedd5; padding: 0.2rem 0.5rem; border-radius: 4px;">プレゼント</span>と送信してください！
+                        </p>
                         <div class="present-cta text-center">
-                            <a href="#" class="btn btn-xl btn-line"
-                                onclick="alert('公式LINEへ遷移します'); return false;">公式LINEに登録して、<br>無料プレゼントをGETする</a>
+                            <a href="https://lin.ee/ZQB3fee" target="_blank" rel="noopener noreferrer" class="btn btn-xl btn-line">公式LINEに登録して、<br>無料プレゼントをGETする</a>
                         </div>
                     </div>
                 </div>
@@ -234,11 +245,6 @@
         <section class="target section fade-in">
             <div class="container xl">
                 <h2 class="section-title">こんな方に選ばれています</h2>
-
-                <div class="review-image-placeholder">
-                    <img src="https://placehold.co/800x400/f1f5f9/334155?text=ここに口コミ画像が入ります" alt="口コミ画像"
-                        class="review-img">
-                </div>
 
                 <div class="worry-cards target-list">
                     <div class="worry-card target-item">
@@ -253,6 +259,20 @@
                         <div class="worry-icon">🚀</div>
                         <p>すでにホームインスペクション<br>事業を行っているが<br>うまく軌道に乗らない方</p>
                     </div>
+                </div>
+                <div class="review-header" style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">
+                    <h3 style="display: inline-block; font-size: 1.8rem; font-weight: 900; color: var(--primary); padding-bottom: 0.5rem; border-bottom: 3px solid var(--accent);">
+                        <span style="font-size: 1.5rem; margin-right: 0.5rem;">📝</span>実際にご利用いただいたお客様の声
+                    </h3>
+                    <p style="margin-top: 1rem; font-size: 1.1rem; color: var(--text-main); font-weight: bold;">
+                        多くの方から嬉しいご報告をいただいています！
+                    </p>
+                </div>
+
+                <div class="review-image-placeholder">
+                    <img src="kuchikomi1.jpg" alt="口コミ画像1" class="review-img" style="margin-bottom: 2rem;">
+                    <img src="kuchikomi2.jpg" alt="口コミ画像2" class="review-img" style="margin-bottom: 2rem;">
+                    <img src="kuchikomi3.jpg" alt="口コミ画像3" class="review-img">
                 </div>
             </div>
         </section>
