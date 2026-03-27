@@ -79,4 +79,28 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('scrolled');
         }
     });
+
+    // メッセージの「続きを読む」機能
+    const readMoreBtn = document.querySelector('.read-more-btn');
+    if (readMoreBtn) {
+        readMoreBtn.addEventListener('click', () => {
+            document.querySelector('.message-collapsed-content').classList.add('open');
+            readMoreBtn.classList.add('hidden');
+        });
+    }
+
+    // 口コミ画像のアコーディオン機能
+    const reviewBtn = document.querySelector('.review-read-more-btn');
+    if (reviewBtn) {
+        reviewBtn.addEventListener('click', () => {
+            const content = document.querySelector('.review-collapsed-content');
+            if(content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                reviewBtn.innerHTML = '閉じる 🔼';
+            } else {
+                content.style.display = 'none';
+                reviewBtn.innerHTML = 'すべてのお客様の声を見る 🔽';
+            }
+        });
+    }
 });

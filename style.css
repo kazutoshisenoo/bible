@@ -1166,7 +1166,12 @@ img {
 /* Media Queries */
 @media (max-width: 768px) {
     .section {
-        padding: 4rem 0;
+        padding: 3rem 0; /* 余白を詰める */
+    }
+
+    .section-title {
+        font-size: 1.5rem; /* タイトル縮小 */
+        margin-bottom: 1.5rem;
     }
 
     .hero-main-copy {
@@ -1174,11 +1179,13 @@ img {
     }
 
     .hero {
-        min-height: 100svh; /* スマホのアドレスバー考慮 */
+        min-height: 70svh; /* 高さを抑えて画像の極端な拡大（見切れ）を防ぐ */
+        padding-top: 5rem;
+        padding-bottom: 3rem;
     }
 
     .hero-bg {
-        background-position: center 10%; /* スマホでの見切れをさらに防止（頭頂部に合わせる） */
+        background-position: center 15%; 
     }
 
     .profile-box {
@@ -1200,5 +1207,68 @@ img {
 
     .form-wrapper {
         padding: 2rem 1.5rem;
+    }
+
+    /* 追加：文字数削減と横スクロール化 */
+    .course-sub, .hide-on-mobile {
+        display: none !important;
+    }
+
+    .btn-xl {
+        padding: 1rem 1.5rem;
+        font-size: 1.15rem;
+    }
+
+    .message-collapsed-content {
+        display: none;
+        margin-top: 1rem;
+    }
+    .message-collapsed-content.open {
+        display: block;
+    }
+    .read-more-btn {
+        display: block;
+        margin: 1.5rem auto 0;
+        background: var(--white);
+        border: 2px solid var(--primary);
+        color: var(--primary);
+        font-weight: 700;
+        padding: 0.8rem 1.5rem;
+        border-radius: var(--radius);
+        cursor: pointer;
+    }
+    .read-more-btn.hidden {
+        display: none;
+    }
+
+    .worry-cards {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding-bottom: 1.5rem;
+        -webkit-overflow-scrolling: touch;
+        grid-template-columns: none;
+    }
+    .worry-cards::-webkit-scrollbar {
+        height: 6px;
+    }
+    .worry-cards::-webkit-scrollbar-thumb {
+        background: var(--border);
+        border-radius: 4px;
+    }
+    .worry-card {
+        min-width: 85%;
+        scroll-snap-align: center;
+        flex: 0 0 auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .read-more-btn {
+        display: none;
+    }
+    .message-collapsed-content {
+        display: block;
     }
 }
